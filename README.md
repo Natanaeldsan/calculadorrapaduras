@@ -1,1 +1,1 @@
-# calculadorrapaduras
+# Calculadora de rapaduras
