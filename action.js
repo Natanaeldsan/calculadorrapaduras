@@ -14,6 +14,12 @@ function qtr () {
     if (unidade=='g'){
     pesof= peso/1000;
     }
+    if(pesof <=0.03){
+       var rapadura="rapadurinhas"
+    }
+else {
+    var rapadura="rapaduras";
+}
     if (brix !== '' && litros!=='') {
 
         var tw= brix*litros;
@@ -22,7 +28,7 @@ function qtr () {
         var twq= tq/100
         const valorRap = (twq/pesof).toFixed(1);
 
-        resultado.textContent = `São ${valorRap} rapaduras`;
+        resultado.textContent = `São ${valorRap} ${rapadura}`;
     }
         else if (brix !== '' && litros=='') {
             var op=pesocaldo/densidadecaldo;
@@ -32,7 +38,7 @@ function qtr () {
             var twq= tq/100
             const valorRap = (twq/pesof).toFixed(1);
     
-            resultado.textContent = `São ${valorRap} rapaduras`;    
+            resultado.textContent = `São ${valorRap} ${rapadura}`;    
     }
     else {
         resultado.textContent = 'Preencha todos os campos!!!';
