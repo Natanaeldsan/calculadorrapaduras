@@ -1,4 +1,5 @@
 const calcular = document.getElementById('calcular');
+const limpar = document.getElementById('limpar');
 
 function qtr () {
     const brix = document.getElementById('brix').value;
@@ -20,7 +21,8 @@ function qtr () {
 else {
     var rapadura="rapaduras";
 }
-    if (brix !== '' && litros!=='') {
+
+    if (brix !== '' && litros!=='' && pesof !=='') {
 
         var tw= brix*litros;
         var tr= 2*litros;
@@ -41,9 +43,12 @@ else {
             resultado.textContent = `São ${valorRap} ${rapadura}`;    
     }
     else {
-        resultado.textContent = 'Preencha todos os campos!!!';
+        resultado.textContent = 'Resultado indisponível';
     }
 
 }
-
+function limp(){
+    resultado.textContent="";
+}
 calcular.addEventListener('click', qtr);
+limpar.addEventListener('click', limp);
