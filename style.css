@@ -13,8 +13,8 @@ main{
     display: flex;
     flex-direction: column;
     background: rgba(174, 174, 174, 0.59);
-    width: 30px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
