@@ -13,13 +13,12 @@ main{
     display: flex;
     flex-direction: column;
     background: rgba(174, 174, 174, 0.59);
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: 0 0 3px black;
-    margin-top: 10px;
   }
 
   .inputs{
