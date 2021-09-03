@@ -2,8 +2,8 @@ const calcular = document.getElementById('calcular');
 const limpar = document.getElementById('limpar');
 
 function qtr () {
-    const brix = document.getElementById('brix').value;
-    const litros = document.getElementById('litros').value;
+    var brix = document.getElementById('brix').value;
+    var litros = document.getElementById('litros').value;
     var peso = document.getElementById('peso').value;
     var pesocaldo = document.getElementById('pesocaldo').value;
     var densidadecaldo = document.getElementById('densidadecaldo').value;
@@ -22,33 +22,45 @@ else {
     var rapadura="rapaduras";
 }
 
-    if (brix !== '' && litros!=='' && pesof !=='') {
+    if (brix !== '' && litros !=='' && pesof !=='' && densidadecaldo =='' && pesocaldo =='') {
 
         var tw= brix*litros;
         var tr= 2*litros;
         var tq= tw-tr;
         var twq= tq/100
-        const valorRap = (twq/pesof).toFixed(1);
+        var valorRap = (twq/pesof).toFixed(1);
 
         resultado.textContent = `São ${valorRap} ${rapadura}`;
     }
-        else if (brix !== '' && litros=='') {
+        else if (brix !== '' && litros =='' && densidadecaldo !=='' && pesocaldo !=='' && pesof !=='') {
             var op=pesocaldo/densidadecaldo;
             var tw= brix*op;
             var tr= 2*op;
             var tq= tw-tr;
-            var twq= tq/100
-            const valorRap = (twq/pesof).toFixed(1);
+            var twq= tq/100;
+            var valorRap = (twq/pesof).toFixed(1);
     
-            resultado.textContent = `São ${valorRap} ${rapadura}`;    
+            resultado.textContent = `São ${valorRap} ${rapadura}`;   
     }
+    
     else {
         resultado.textContent = 'Resultado indisponível';
     }
-
+    if (valorRap ==Infinity){
+        resultado.textContent="Coloque o peso de cada rapadura"
+    }
 }
 function limp(){
     resultado.textContent="";
+    if (brix !==''){
+        document.getElementById('brix').value='';
+        document.getElementById('litros').value='';
+        document.getElementById('pesocaldo').value='';
+        document.getElementById('densidadecaldo').value='';
+        document.getElementById('peso').value='';
+    }
+        
+    
 }
 calcular.addEventListener('click', qtr);
 limpar.addEventListener('click', limp);

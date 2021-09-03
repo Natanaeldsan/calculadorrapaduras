@@ -12,13 +12,13 @@ main{
   .container{
     display: flex;
     flex-direction: column;
-    background: rgb(174, 174, 174);
-    width: 600px;
-    height: 600px;
+    background: rgba(174, 174, 174, 0.59);
+    width: 500px;
+    height: 500px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 3px black;
   }
 
   .inputs{
@@ -51,7 +51,7 @@ main{
     border-radius: 5px;
     cursor: pointer;  }
   button:hover{
-    background-color: green;
+    background-color: rgba(0, 186, 0, 0.96);
     width: 97px;
     height: 97px;
   }
@@ -65,10 +65,10 @@ main{
     height: 100px;
     margin: 20px;
   }
-  
+    
   .result{
     display: flex;
-    margin-top: -80px;
+    margin-top: -105px;
     align-items: center;
     width: 500px;
     height: 150px;
@@ -86,7 +86,7 @@ main{
 
   }
   .result:hover{
-    width: 510px;
+    width: 505px;
     height: 160px;
   }
   select{
