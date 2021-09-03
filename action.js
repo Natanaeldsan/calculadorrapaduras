@@ -61,4 +61,3 @@ function limp() {
 }
 calcular.addEventListener('click', qtr);
 limpar.addEventListener('click', limp);
-console.log('Faça bom proveito!');
