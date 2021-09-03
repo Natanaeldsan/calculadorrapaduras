@@ -13,8 +13,8 @@ main{
     display: flex;
     flex-direction: column;
     background: rgba(174, 174, 174, 0.59);
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
@@ -65,7 +65,7 @@ main{
     height: 100px;
     margin: 20px;
   }
-    
+
   .result{
     display: flex;
     margin-top: -105px;
