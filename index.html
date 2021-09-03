@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rapaduras</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/rapadura.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/rapadura.png" />
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="result" id='resultado'></div>
+        <div class="result" id="resultado"></div>
         <div class="inputs">
-        <div class="input">
-          <label placeholder="Em º">Brix</label>
-          <input type="number" id='brix' placeholder="Em graus">
+          <div class="input">
+            <label placeholder="Em º">Brix</label>
+            <input type="number" id="brix" placeholder="°Bx" />
+          </div>
+          <div class="input">
+            <label>Volume de caldo</label>
+            <input type="number" id="litros" placeholder="litros" />
+          </div>
+          <div class="input">
+            <label>Peso do caldo</label>
+            <input type="number" id="pesocaldo" placeholder="kg" />
+          </div>
+          <div class="input">
+            <label>Densidade do caldo</label>
+            <input type="number" id="densidadecaldo" placeholder="kg/l" />
+          </div>
+          <div class="pesoparacalculo">
+            <div class="input">
+              <label>Peso de cada rapadura</label>
+              <input
+                type="number"
+                id="peso"
+                placeholder="Escolha as unidades"
+              />
+            </div>
+            <select name="operacao" id="operacao">
+              <option value="g">g</option>
+              <option value="kg">kg</option>
+            </select>
+          </div>
         </div>
-        <div class="input">
-          <label>Volume de caldo</label>
-            <input type="number" id='litros' placeholder="Litros">
+        <div class="buttons">
+          <button id="calcular">Calcular</button>
+          <button id="limpar">Limpar</button>
         </div>
-        <div class="input">
-          <label>Peso do caldo</label>
-            <input type="number" id='pesocaldo' placeholder="Em kg">
-        </div>
-        <div class="input">
-          <label>Densidade do caldo</label>
-            <input type="number" id='densidadecaldo' placeholder="Em kg/l">
-        </div>
-        <div class="pesoparacalculo">
-        <div class="input">
-          <label>Peso de cada rapadura</label>
-            <input type="number" id='peso' placeholder="Escolha as unidades">
-        </div>
-        <select name="operacao" id="operacao">
-          <option value="g">g</option>
-          <option value="kg">kg</option>
-        </select>
-    </div>
-  </div>
-    <div class="buttons">
-        <button id='calcular'>Calcular</button>
-        <button id='limpar'>Limpar</button>
-      </div>
       </div>
     </main>
     <script src="./action.js"></script>

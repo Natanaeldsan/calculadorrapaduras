@@ -1,112 +1,112 @@
-main{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    font-family: arial,sans-serif;
-    background-image: rgb(235, 251, 255);
-  
-  }
-  
-  .container{
-    display: flex;
-    flex-direction: column;
-    background: rgba(174, 174, 174, 0.59);
-    width: 500px;
-    height: 500px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: 0 0 3px black;
-  }
+main {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  font-family: arial, sans-serif;
+  background-image: rgb(235, 251, 255);
+  margin-top: 100px;
+}
 
-  .inputs{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 50px;
-    padding: 10px; 
-    margin: auto; 
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content:space-between;
-  }
-  .input input {
-    width: 170px;
-    height: 50px;
-    border-radius: 5px;
-    border:none;
-    font: bold 1.5rem;
-    text-align: center;
-  }
-  button{
-    width: 100px;
-    height: 100px;
-    font: bold 1.2rem arial,sans-serif;
-    background: #000;
-    color: white;
-    padding: 10px;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;  }
-  button:hover{
-    background-color: rgba(0, 186, 0, 0.96);
-    width: 97px;
-    height: 97px;
-  }
-  button:active{
-    background-color: red;
-  }
-  .buttons{
-    display: flex;
-    justify-content: space-evenly;
-    width: 467px;
-    height: 100px;
-    margin: 20px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(174, 174, 174, 0.59);
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0 0 3px black;
+}
 
-  .result{
-    display: flex;
-    margin-top: -105px;
-    align-items: center;
-    width: 500px;
-    height: 150px;
-    border-radius: 5px;
-    font: bold 1.5rem sans-serif ;
-    box-shadow: 0px 0px 10px black;
-    background: #000;
-    color:  rgb(235, 251, 255);
-    padding: 20px;
-    box-sizing: border-box;
-    user-select: none;
-    z-index: 1;
-    transition: 0.1s;
-    transition-delay: 0.5s;
+.inputs {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
+  padding: 10px;
+  margin: auto;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.input input {
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font: bold 1.5rem;
+  text-align: center;
+}
+button {
+  width: 100px;
+  height: 100px;
+  font: bold 1.2rem arial, sans-serif;
+  background: #000;
+  color: white;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(0, 186, 0, 0.96);
+  width: 97px;
+  height: 97px;
+}
+button:active {
+  background-color: red;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 467px;
+  height: 100px;
+  margin: 20px;
+}
 
-  }
-  .result:hover{
-    width: 505px;
-    height: 160px;
-  }
-  select{
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
-    font-weight: bold;
-    height: 25px;
-    margin-top: -25px;
-    margin-left: 175px;
-  }
-  label{
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
-    font-weight: bold;
-    margin-top: -20px;
-    }
-  input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+.result {
+  display: flex;
+  margin-top: -105px;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  border-radius: 5px;
+  font: bold 1.5rem sans-serif;
+  box-shadow: 0px 0px 10px black;
+  background: #000;
+  color: rgb(235, 251, 255);
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+  z-index: 1;
+  transition: 0.1s;
+  transition-delay: 0.5s;
+}
+.result:hover {
+  width: 505px;
+  height: 160px;
+}
+select {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  height: 25px;
+  margin-top: -25px;
+  margin-left: 175px;
+}
+label {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  margin-top: -20px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
