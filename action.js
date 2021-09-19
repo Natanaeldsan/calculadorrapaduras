@@ -1,5 +1,11 @@
 const calcular = document.getElementById('calcular');
 const limpar = document.getElementById('limpar');
+const acolor = document.querySelector('.acolor')
+const bcolor = document.querySelector('.bcolor')
+const ccolor = document.querySelector('.ccolor')
+const dcolor = document.querySelector('.dcolor')
+const ecolor = document.querySelector('.ecolor')
+const container = document.querySelector('.container')
 //função usada para calcular
 function qtr() {
     var brix = document.getElementById('brix').value;
@@ -59,5 +65,49 @@ function limp() {
         document.getElementById('peso').value = '';
     }
 }
+var fcolor= '#FF8C00';
+var scolor='#008080';
+var tcolor= 'green';
+var focolor= 'red';
+var fivecolor= '#D3D3D3';
+
+//funções
+function aTcolor(){
+    container.style['backgroundColor'] = fcolor;
+    container.style['color'] = 'white';
+}
+function bTcolor(){
+    container.style['backgroundColor'] = scolor;
+    container.style['color'] = 'white';
+}
+function cTcolor(){
+    container.style['backgroundColor'] = tcolor;
+    container.style['color'] = 'white';
+    }
+function dTcolor(){
+    container.style['backgroundColor'] = focolor;
+    container.style['color'] = 'white';
+}
+function eTcolor(){
+    container.style['backgroundColor'] = fivecolor;
+    container.style['color'] = 'black';
+}
+
+acolor.style['backgroundColor']= fcolor;
+bcolor.style['backgroundColor']= scolor;
+ccolor.style['backgroundColor']= tcolor;
+dcolor.style['backgroundColor']= focolor;
+ecolor.style['backgroundColor']= fivecolor;
+
+var tcor= container.style['backgroundColor'];
+if (tcor= '#7CFC00'){
+    container.style['color']='white';
+}
+
 calcular.addEventListener('click', qtr);
 limpar.addEventListener('click', limp);
+acolor.addEventListener('click', aTcolor)
+bcolor.addEventListener('click', bTcolor)
+ccolor.addEventListener('click', cTcolor)
+dcolor.addEventListener('click', dTcolor)
+ecolor.addEventListener('click', eTcolor)

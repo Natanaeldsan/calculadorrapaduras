@@ -12,7 +12,7 @@ main {
 .container {
   display: flex;
   flex-direction: column;
-  background: rgba(174, 174, 174, 0.59);
+  background: #008080;
   width: 500px;
   height: 500px;
   align-items: center;
@@ -21,6 +21,22 @@ main {
   box-shadow: 0 0 3px black;
 }
 
+.cora {
+  width: 25px !important;
+  height: auto !important;
+}
+
+.cora:hover {
+  display: inline !important;
+}
+.cora button {
+  border-radius: 50% !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+.cora button {
+  display: inline;
+}
 .inputs {
   display: grid;
   grid-template-columns: auto auto;
@@ -55,9 +71,6 @@ button:hover {
   background-color: rgba(0, 186, 0, 0.96);
   width: 97px;
   height: 97px;
-}
-button:active {
-  background-color: red;
 }
 .buttons {
   display: flex;
