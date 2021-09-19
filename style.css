@@ -7,7 +7,7 @@ main {
   font-family: arial, sans-serif;
   background-image: rgb(235, 251, 255);
   margin-top: 100px;
-  overflow= visible;
+  overflow: visible;
 }
 
 .container {
