@@ -6,7 +6,7 @@ const ccolor = document.querySelector('.ccolor')
 const dcolor = document.querySelector('.dcolor')
 const ecolor = document.querySelector('.ecolor')
 const container = document.querySelector('.container')
-const themerbar = document.querySelector('meta[name='theme-color]')
+const themerbar = document.querySelector('meta[name="theme-color"]')
 //função usada para calcular
 function qtr() {
     var brix = document.getElementById('brix').value;
