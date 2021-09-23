@@ -6,6 +6,7 @@ const ccolor = document.querySelector('.ccolor')
 const dcolor = document.querySelector('.dcolor')
 const ecolor = document.querySelector('.ecolor')
 const container = document.querySelector('.container')
+const themerbar = document.querySelector('meta[name=theme-color]')
 //função usada para calcular
 function qtr() {
     var brix = document.getElementById('brix').value;
@@ -75,22 +76,27 @@ var fivecolor = '#D3D3D3';
 function aTcolor() {
     container.style['backgroundColor'] = fcolor;
     container.style['color'] = 'white';
+    themerbar.style['backgroundColor']= fcolor;
 }
 function bTcolor() {
     container.style['backgroundColor'] = scolor;
     container.style['color'] = 'white';
+    themerbar.style['backgroundColor']= scolor;
 }
 function cTcolor() {
     container.style['backgroundColor'] = tcolor;
     container.style['color'] = 'white';
+    themerbar.style['backgroundColor']= tcolor;
 }
 function dTcolor() {
     container.style['backgroundColor'] = focolor;
     container.style['color'] = 'white';
+    themerbar.style['backgroundColor']= focolor;
 }
 function eTcolor() {
     container.style['backgroundColor'] = fivecolor;
     container.style['color'] = 'black';
+    themerbar.style['backgroundColor']= fivecolor; 
 }
 
 acolor.style['backgroundColor'] = fcolor;
@@ -98,11 +104,6 @@ bcolor.style['backgroundColor'] = scolor;
 ccolor.style['backgroundColor'] = tcolor;
 dcolor.style['backgroundColor'] = focolor;
 ecolor.style['backgroundColor'] = fivecolor;
-
-var tcor = container.style['backgroundColor'];
-if (tcor = '#7CFC00') {
-    container.style['color'] = 'white';
-}
 
 calcular.addEventListener('click', qtr);
 limpar.addEventListener('click', limp);
