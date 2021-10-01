@@ -36,7 +36,7 @@ function qtr() {
         var twq = tq / 100
         var valorRap = (twq / pesof).toFixed(1);
 
-        resultado.textContent = `São ${valorRap} ${rapadura} de ${peso}${unidade}`;
+        resultado.textContent = `${valorRap} ${rapadura} de ${peso}${unidade}`;
     }
     else if (brix !== '' && litros == '' && densidadecaldo !== '' && pesocaldo !== '' && pesof !== '') {
         var op = pesocaldo / densidadecaldo;
@@ -45,7 +45,7 @@ function qtr() {
         var tq = tw - tr;
         var twq = tq / 100;
         var valorRap = (twq / pesof).toFixed(1);
-        resultado.textContent = `São ${valorRap} ${rapadura} de ${peso}${unidade}`;
+        resultado.textContent = `${valorRap} ${rapadura} de ${peso}${unidade}`;
     }
 
     else {
