@@ -64,13 +64,11 @@ function qtr() {
 //função usada para limpar
 function limp() {
   resultado.textContent = "";
-  if (brix !== "") {
     document.getElementById("brix").value = "";
     document.getElementById("litros").value = "";
     document.getElementById("pesocaldo").value = "";
     document.getElementById("densidadecaldo").value = "";
     document.getElementById("peso").value = "";
-  }
 }
 var fcolor = "#FF8C00";
 var scolor = "#008080";
