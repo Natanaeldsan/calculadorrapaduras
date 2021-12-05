@@ -39,7 +39,7 @@ function qtr() {
     var twq = tq / 100;
     var valorRap = (twq / pesof).toFixed(1);
 
-    resultado.textContent = `${valorRap} ${rapadura} de ${peso}${unidade}`;
+    resultado.textContent = `${valorRap} ${rapadura} de ${peso}${unidade}`.replace('.', ',');
   } else if (
     brix !== "" &&
     litros == "" &&
@@ -53,7 +53,7 @@ function qtr() {
     var tq = tw - tr;
     var twq = tq / 100;
     var valorRap = (twq / pesof).toFixed(1);
-    resultado.textContent = `${valorRap} ${rapadura} de ${peso}${unidade}`;
+    resultado.textContent = `${valorRap} ${rapadura} de ${peso}${unidade}`.replace('.', ',');
   } else {
     resultado.textContent = "Resultado indisponível";
   }
