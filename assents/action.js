@@ -23,7 +23,7 @@ function qtr() {
     pesof = peso / 1000;
   }
   if (pesof <= 0.03) {
-    var rapadura = "rapadurinhas";
+   rapadura = "rapadurinhas";
   }
 
   if (
